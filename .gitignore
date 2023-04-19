@@ -21,3 +21,6 @@ val_utils/
 
 # interactive plots
 *.html
+
+assets/
+yolov8/
