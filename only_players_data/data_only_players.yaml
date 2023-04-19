@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['person']
+
+roboflow:
+  workspace: project
+  project: player_tracking_t7_labeled
+  version: 2
+  license: MIT
+  url: https://universe.roboflow.com/project/player_tracking_t7_labeled/dataset/2
