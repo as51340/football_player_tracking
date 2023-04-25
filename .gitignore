@@ -3,9 +3,6 @@
 # interpreter bytecode
 __pycache__/
 
-# experiment results
-runs/
-
 # evaluation tools folder
 val_utils/
 
