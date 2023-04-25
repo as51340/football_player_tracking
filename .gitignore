@@ -12,3 +12,6 @@ val_utils/
 *.pt
 *.onnx
 *.engine
+
+only_players_data/
+runs/
