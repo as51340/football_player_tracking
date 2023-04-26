@@ -1,7 +1,7 @@
 from trackers.strong_sort.utils.parser import get_config
 from trackers.strong_sort.strong_sort import StrongSORT
 from trackers.ocsort.ocsort import OCSort
-from trackers.bytetrack.byte_tracker import BYTETracker
+# from trackers.bytetrack.byte_tracker import BYTETracker
 
 
 def create_tracker(tracker_type, appearance_descriptor_weights, device, half):
@@ -33,13 +33,14 @@ def create_tracker(tracker_type, appearance_descriptor_weights, device, half):
         )
         return ocsort
     elif tracker_type == 'bytetrack':
-        bytetracker = BYTETracker(
-            track_thresh=0.6,
-            track_buffer=30,
-            match_thresh=0.8,
-            frame_rate=30
-        )
-        return bytetracker
+        raise NotImplementedError('BYTETracker is not implemented yet')
+        # bytetracker = BYTETracker(
+        #     track_thresh=0.6,
+        #     track_buffer=30,
+        #     match_thresh=0.8,
+        #     frame_rate=30
+        # )
+        # return bytetracker
     else:
         print('No such tracker')
         exit()
